@@ -39,7 +39,28 @@ public class Linked_5 {
 
     }
 
+
+    public static Node delNode(Node head, int pos) {
+        Node tempNode = head;
+        
+        if (pos == 0) {
+            head = tempNode.next;
+            return head;
+        }
+
+        Node prevNode = null;
+        for (int i = 0; i < pos ; i++) {
+                prevNode = tempNode
+                tempNode = tempNode.next
+        }
+
+
+
+    }
+
+
     public static void main(String[] args) {
+
         Node headNode = new Node(50);
         headNode.next = new Node(60);
         headNode.next.next = new Node(60);
