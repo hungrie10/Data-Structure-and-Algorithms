@@ -5,7 +5,7 @@ while ($true) {
   $status = git status --porcelain
 
   if ($status) {
-      git commit -m "I love Coding in J"
+      git commit -m "I love Coding in Java🥰🌟💖😜"
       git push
   }
 
