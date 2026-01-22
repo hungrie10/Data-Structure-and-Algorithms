@@ -15,7 +15,7 @@ public class Linked_5 {
         // Create a new Node
         Node newNode = new Node(val);
 
-        if (pos == 1) {
+        if (pos == 0) {
             Node oldHead = head;
             newNode.next = oldHead;
             head = newNode;
@@ -24,7 +24,7 @@ public class Linked_5 {
 
         // Move to the Node before the pos
         Node currentNode = head;
-        for (int i = 0; i < pos; i++) {
+        for (int i = 0; i < pos - 1; i++) {
             currentNode = currentNode.next;
         }
 
@@ -44,11 +44,22 @@ public class Linked_5 {
         headNode.next = new Node(60);
         headNode.next.next = new Node(60);
         
-        headNode = InsertMyNode(headNode, 0, 0);
+        headNode = InsertMyNode(headNode, 1, 0);
         
         // Traverse A Node
         Node currNode = headNode;
+
+        while (currNode != null) {
+            System.out.print(currNode.data);
+            if (currNode.next != null) {
+                System.out.print("->");
+
+            }
+            currNode = currNode.next;
+        }
         
+
+
 
     }
 
