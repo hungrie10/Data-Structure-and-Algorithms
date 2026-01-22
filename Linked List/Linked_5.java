@@ -59,6 +59,14 @@ public class Linked_5 {
 
     }
 
+    public static Node searchMyNodes(Node head, int val) {
+        Node currNode = head;
+        while (currNode != v) {
+            
+        }
+
+    }
+
     public static void main(String[] args) {
 
         Node headNode = new Node(50);
