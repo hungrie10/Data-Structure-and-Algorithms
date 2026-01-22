@@ -12,6 +12,7 @@ public class Linked_5 {
     }
     
     public static Node InsertMyNode(Node head, int pos, int val) {
+        // Create a new Node
         Node newNode = new Node(val);
      
         if (pos == 1) {
@@ -21,6 +22,17 @@ public class Linked_5 {
             return head;
         }
 
+        // Move to the Node before the pos
+        Node currentNode = head;
+        for (int i = 0; i < pos; i++) {
+            currentNode = currentNode.next;
+        }
+
+        // Save the Node
+        Node temp = currentNode;
+
+        // Link the New Node to the old Node
+        currentNode.next = temp;
 
     }
     
