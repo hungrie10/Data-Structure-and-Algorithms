@@ -67,9 +67,18 @@ public class Linked_5 {
 
         headNode = InsertMyNode(headNode, 1, 0);
 
+        // while (currNode != null) {
+        // System.out.print(currNode.data);
+        // if (currNode.next != null) {
+        // System.out.print("->");
+
+        // }
+        // currNode = currNode.next;
+        // }
+
+        headNode = delNode(headNode, 2);
         // Traverse A Node
         Node currNode = headNode;
-
         while (currNode != null) {
             System.out.print(currNode.data);
             if (currNode.next != null) {
