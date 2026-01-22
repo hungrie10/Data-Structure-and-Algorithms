@@ -10,13 +10,13 @@ public class Linked_5 {
         };
 
     }
-    
+
     public static Node InsertMyNode(Node head, int pos, int val) {
         // Create a new Node
         Node newNode = new Node(val);
-     
+
         if (pos == 1) {
-            Node oldHead = head; 
+            Node oldHead = head;
             newNode.next = oldHead;
             head = newNode;
             return head;
@@ -32,19 +32,24 @@ public class Linked_5 {
         Node temp = currentNode;
 
         // Link the New Node to the old Node
-        currentNode.next = temp;
+        newNode.next = temp.next;
+        currentNode.next = newNode;
+
+        return head;
 
     }
-    
+
     public static void main(String[] args) {
         Node headNode = new Node(50);
         headNode.next = new Node(60);
         headNode.next.next = new Node(60);
+        
+        headNode = InsertMyNode(headNode, 0, 0);
+        
+        // Traverse A Node
+        Node currNode = headNode;
+        
 
-
-
-
-         
     }
-    
+
 }
