@@ -59,11 +59,16 @@ public class Linked_5 {
 
     }
 
-    public static Node searchMyNodes(Node head, int val) {
+    public static boolean searchMyNodes(Node head, int val) {
         Node currNode = head;
-        while (currNode != v) {
-            
+        while (currNode != null) {
+            if (currNode.data == val) {
+                return true;
+            }
+            currNode = currNode.next;
         }
+
+        return false;
 
     }
 
@@ -96,6 +101,8 @@ public class Linked_5 {
             currNode = currNode.next;
         }
 
+       boolean  searchMyNodes(headNode, 60);
+        System.out.println();
     }
 
 }
