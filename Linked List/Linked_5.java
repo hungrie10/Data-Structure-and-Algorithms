@@ -76,7 +76,7 @@ public class Linked_5 {
         // currNode = currNode.next;
         // }
 
-        headNode = delNode(headNode, 2);
+        headNode = delNode(headNode, 0);
         // Traverse A Node
         Node currNode = headNode;
         while (currNode != null) {
