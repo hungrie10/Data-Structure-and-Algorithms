@@ -53,7 +53,9 @@ public class Linked_5 {
             tempNode = tempNode.next;
         }
 
-        
+        prevNode.next = tempNode.next;
+
+        return head;
 
     }
 
