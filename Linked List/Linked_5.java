@@ -101,8 +101,9 @@ public class Linked_5 {
             currNode = currNode.next;
         }
 
-       boolean  searchMyNodes(headNode, 60);
-        System.out.println();
+       boolean checkNode = searchMyNodes(headNode, 60);
+        System.out.println("");
+        System.out.println(checkNode);
     }
 
 }
