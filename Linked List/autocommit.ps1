@@ -9,5 +9,5 @@ while ($true) {
       git push
   }
 
-  Start-Sleep -Seconds 20
+  Start-Sleep -Seconds 120
 }
